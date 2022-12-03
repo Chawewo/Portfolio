@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    marign: 0;
+    scroll-behaviour: smooth;
+}
+
+body {
+    background: var(--color-bg)
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+.gradient__bg{
+
+    background:-moz-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 101, 187, 0.97) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 101, 187, 0.97) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 101, 187, 0.97) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0765BB', endColorstr='#00FFEB', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 101, 187, 0.97) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 101, 187, 0.97) 100%);
+}
+    .gradient__text{
+    background:var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding{
+    padding: 4rem 6rem;
+}
+.section__margin{
+    margin: 4rem 6rem;
+}
