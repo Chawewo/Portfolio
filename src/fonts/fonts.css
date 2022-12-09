@@ -1,0 +1,6 @@
+/* File: font.css */
+@font-face {
+    font-family: "Light";
+    src: local("KnewaveRegular"),
+    url("./fonts/KnewaveRegular.ttf") format("truetype");
+  }
