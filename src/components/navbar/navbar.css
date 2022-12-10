@@ -95,7 +95,7 @@
 }
 /* media queries for screen sizes */
 @media screen and (max-width: 1050px) {
-    .chawewo__navbar-links-container {
+    .chawewo__navbar-links_container {
         display: none;
     }
     .chawewo__navbar-menu {
@@ -116,6 +116,7 @@
         display: none;
     }
     .chawewo__navbar-menu_container{
+        
         top: 20px;
     }
     .chawewo__navbar-menu_container-links-send{
