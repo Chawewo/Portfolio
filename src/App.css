@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,12 +11,13 @@ body {
 a {
     color: unset;
     text-decoration: none;
+    -webkit-text-stroke: 1px #000000;
+    text-decoration: underline white;
 }
 .gradient__bg{
+/* Absolute makes sure that the black stays with the header */
 
- 
-
-
+background-color: 'black';
   /* ff 3.6+ */
   background:-moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%); 
 
