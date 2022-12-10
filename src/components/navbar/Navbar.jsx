@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import logo from '../../assets/Chawewo.png';
 import './navbar.css';
-import { RiMenu3Line, RiCloseLin, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/Chawewo.svg';
-// BEM -> Block Elemen Modifier
 const Menu = () => (
   <>
         <p><a href="#home">Home</a></p>
@@ -13,19 +12,19 @@ const Menu = () => (
 )
 
 const Navbar = () => {
-  const {toggleMenu, setToggleMenu} = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className="chawewo__navbar">
       <div className="chawewo__navbar-links">
         <div className="chawewo__navbar-links_logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" /> 
+          </div>
         <div className="chawewo__navbar-links_container"> 
         <Menu />
         </div>
-        </div>
       </div>
-      <div className="chawewo__navbar-send"> 
-      
+      <div className="chawewo__navbar-send">
       <button type="button">Send a message</button>
       </div>
       <div className="chawewo__navbar-menu"> 
@@ -34,15 +33,15 @@ const Navbar = () => {
        : <RiMenu3Line color="fff" size ={27} onClick ={() => setToggleMenu(true)} />
       }
       {toggleMenu && (
-        <div className="chawewo__navbar-menu_container scale-up">
+        <div className="chawewo__navbar-menu_container scale-up-center">
           <div className="chawewo__navbar-menu_container-links">
-          <Menu />
+            <Menu />
+          </div>
           <div className="chawewo__navbar-menu_container-links-send"> 
-      
       <button type="button">Send a message</button>
-      </div>
+          </div>
         </div>
-        </div>
+        
       )}
       </div>
     </div>
@@ -50,4 +49,5 @@ const Navbar = () => {
 
 }
 
-export default Navbar
+export default Navbar;
+ 
