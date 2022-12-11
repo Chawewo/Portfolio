@@ -33,7 +33,7 @@ const Navbar = () => {
        : <RiMenu3Line color="fff" size ={27} onClick ={() => setToggleMenu(true)} />
       }
       {toggleMenu && (
-        <div className="chawewo__navbar-menu_container scale-up-center">
+        <div className="chawewo__navbar-menu_container fade-in">
           <div className="chawewo__navbar-menu_container-links">
             <Menu />
           </div>
