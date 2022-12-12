@@ -1,5 +1,5 @@
 import React from 'react';
-import {Footer, Blog, Possibility, Features, WhatChawewo, Header} from './containers';
+import {Footer, Blog, Possibility, Features, WhoChawewo, Header} from './containers';
 import { CTA, Brand, Navbar} from './components';
 import './App.css';
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
           <Header />
         </div>
         <Brand />
-        <WhatChawewo />
+        <WhoChawewo />
         <Features />
         <Possibility />
         <CTA />
