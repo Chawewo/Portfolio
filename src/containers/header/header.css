@@ -1,6 +1,7 @@
 .chawewo__header {
     display: flex;
     flex-direction: row;
+    background:  rgb(6, 7, 7);;
 }
 .chawewo__header-content{
     flex: 1;
@@ -8,18 +9,17 @@
     justify-content: center;
     align-items: center;
     flex-direction:column;
-
     margin-right: 0rem;
 }
 .chawewo__header-content h1 {
     font-family: var(--font-family);
-    font-weight: 230;
+    font-weight: 10;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -0.00rem;
 }
 .chawewo__header-content p {
-    font-family: var(--font-family);
+    font-family: 'Recoleta';
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -33,15 +33,16 @@
     margin: 3rem 0 1rem;
     display: flex;
     flex-direction: row;
+    
 }
 .chawewo__header-content__input input {
     flex: 2;
     width: 100%;
     min-height: 50px;
-    font-family: var(--font-family);
+    font-family: 'Recoleta';
     font-size: 20px;
     line-height: 27px;
-    background: var(--color-footer);
+    background: rgb(10, 12, 12);
     border: 2px solid var(--color-footer);
     padding: 0 1rem;
     border-top-left-radius: 5px;
@@ -55,8 +56,8 @@
     min-height: 50px;
 
     background: #edd8d4;
-    border-radius: 5px 0px 0px 5px;
-    font-family: var(--font-family);
+    border-radius: 12px 12px 12px 12px;
+    font-family: 'Recoleta';
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -67,4 +68,7 @@
     cursor: pointer;
     outline: none;
     padding: 0 0rem;
+}
+.gradient__text{
+    width: 367px;
 }

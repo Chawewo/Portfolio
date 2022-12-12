@@ -1,14 +1,25 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 */
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap'); 
-
+@font-face {
+  font-family: 'Bogart';
+  src: url('fonts/Bogart.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('fonts/Recoleta.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
-  font-family: 'Knewave', cursive;
+  --font-family: 'Knewave', 'Bogart', Cursive;
   --gradient-text: linear-gradient(89.97deg, #00ffd5 1.84%, #1c56e8 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   
-  --color-bg:  hsl(210, 8%, 10%);
-  --color-footer : hsl(210, 8%, 10%);
+  --color-bg:  hsl(180, 8%, 3%);
+  --color-footer : hsl(180, 10%, 4%);
   --color-blog: hsl(210, 8%, 10%);
   --color-text: #ffffff;
   --color-subtext: #FF8A71;

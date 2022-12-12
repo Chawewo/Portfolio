@@ -83,7 +83,11 @@ background-color: 'black';
     -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
-
+.fade-in-main{
+  -webkit-animation: fade-in 4.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 4.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+ 
+}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -98,6 +102,27 @@ background-color: 'black';
   }
   100% {
     opacity: 1;
+  }
+}
+.fade-out{
+  -webkit-animation: fade-in 1.2s cubic-bezier(1.000, 0.565, 0.575, 0.390) both;
+            animation: fade-in 2.2s cubic-bezier(1.000, 0.565, 0.575, 0.390) both;
+  
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

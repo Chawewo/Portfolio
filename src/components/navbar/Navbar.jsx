@@ -6,8 +6,8 @@ const Menu = () => (
   <>
         <p><a href="#home">Home</a></p>
         <p><a href="#person">Who am I?</a></p>
-        <p><a href="#linkedin">LinkedIn</a></p>
-        <p><a href="#github">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/davidtrujillo-liprofile/">LinkedIn</a></p>
+        <p><a href="https://github.com/Chawewo">Github</a></p>
   </>
 )
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
       <div className="chawewo__navbar-menu"> 
       {toggleMenu
-       ? <RiCloseLine color="fff" size ={27} onClick ={() => setToggleMenu(false)} />
+       ? <RiCloseLine color="fff" size ={27} onClick ={() => setToggleMenu(false)}  />
        : <RiMenu3Line color="fff" size ={27} onClick ={() => setToggleMenu(true)} />
       }
       {toggleMenu && (
@@ -41,8 +41,8 @@ const Navbar = () => {
       <button type="button">Send a message</button>
           </div>
         </div>
-        
-      )}
+      )
+      }
       </div>
     </div>
   )
