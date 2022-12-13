@@ -18,16 +18,18 @@
 .chawewo__whoChawewo-heading{
     display: flex;
     flex-direction: none;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 3rem;
     
 }
 .chawewo__whoChawewo-heading h1 {
     font-family: 'Recoleta';
-    line-height: 45px;
-    font-weight: Bold;
-    max-width: 510px;
-    font-size: 34px;
+    max-width: 200px;
+    /*
+    align-items: center;
+    justify-content: space-between;
 
+    font-weight: Bold;
+    max-width: 500px;
+    font-size: 34px;
+*/
 }

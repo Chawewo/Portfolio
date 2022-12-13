@@ -41,7 +41,8 @@ const Navbar = () => {
       <button type="button">Send a message</button>
           </div>
         </div>
-      )
+      ) 
+
       }
       </div>
     </div>

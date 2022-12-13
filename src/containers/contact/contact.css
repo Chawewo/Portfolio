@@ -1,0 +1,16 @@
+/*.chawewo__container {
+    margin-top: 50px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: Column;
+}
+.chawewo__container h1
+{
+    font-style: 'Recoleta', Helvetica;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+*/
