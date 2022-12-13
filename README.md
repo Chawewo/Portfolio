@@ -39,9 +39,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this, as this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### NPM i react-icons
+### `npm i react-icons`
 This will allow us to utilize the react icons library which is needed for the menu
 
-### NPM i emailjs 
+### `npm i emailjs`
 
 In order to utilize the email service you must create an account with EmailJS.
