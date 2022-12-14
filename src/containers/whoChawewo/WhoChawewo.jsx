@@ -1,19 +1,18 @@
 import React from 'react';
-import { Feature } from '../../components';
-import './whoChawewo.css';
 const WhoChawewo = () => {
   return (
-    <div className="chawewo__whoChawewo section__margin" id="Who am I?">
-      <div className="chawewo__whochawewo-feature">
-        <Feature />
+ <div className="container rounded text-center p-3" style={{width: '60%', background: "#191919", height: "100%"}} id="Who">
+  <div> 
+  <h1 style={{fontFamily: 'Recoleta',fontWeight: "10px", color: "#fff"}} className="gradient__text font-weight-bold">
+    Hello, my name is David.
+  </h1>
+ <h6 style={{fontFamily: 'Recoleta', color: "#fff", overflow:'auto'}} className="font-weight-light text-center ">
+I am currently a student at Fullerton college studying Computer Science and plan to transfer to Cal State Fullerton this Fall Semester.
+Currently striving to become a Full-Stack software engineer to unleash my creativity, taking it one step at a time. 
 
-      </div>
-      <div className="chawewo__whoChawewo-heading">
-        <h1 className="gradient__text">
-          A developer who wants to create
-        </h1>
-      </div>
-    </div>
+ </h6>
+ </div>
+ </div>
   )
 }
 

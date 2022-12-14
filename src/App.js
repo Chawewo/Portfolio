@@ -1,7 +1,9 @@
 import React from 'react';
-import {Footer, Contact, Blog, Possibility, Features, WhoChawewo, Header} from './containers';
-import { CTA, Brand, Navbar} from './components';
+import {Footer, Contact, WhoChawewo, Header} from './containers';
+import { Brand, Navbar} from './components';
 import './App.css';
+
+
 const App = () => {
   return (
     <div className="App">
@@ -11,8 +13,14 @@ const App = () => {
         </div>
         <Brand />
         <WhoChawewo />
+        <div className="mt-5 col-md-12">
         <Contact />
+        <div className="mt-5 col-md-12">
+
+        
         <Footer />
+      </div>
+      </div>
       </div>
   )
 }

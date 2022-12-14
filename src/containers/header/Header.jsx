@@ -1,18 +1,70 @@
-import React from 'react';
-import './header.css';
+import React, { useState } from 'react';
+import './header.css'; 
+import emailjs from "emailjs-com";
+const apiKey = 'live_dViQmeUAKUExSaFyF3bIrE9ORnkNi7S67UxnNysgNMKr8yf5XahDRFG2CgX5326y';
+const url = 'https://api.thecatapi.com/v1/images/search';
+
 const Header = () => {
+  // Grabbing Url from cat api
+  const [ catUrl, setCatUrl ] = useState('Testing'); // Returns testing, then a function, we access through array
+
+  const getCat = () => {
+    console.log('Hello World!');
+    fetch(url)
+    .then((res) => res.json()) /* */
+    .then((cats) => {
+      console.log('Cats: ', cats);
+      const catUrl = cats[0].url; //grabs the first element and url
+      setCatUrl(catUrl);
+    })
+    .catch((error) => {
+      console.log( 'Error: ', error);
+    });
+  }
+ // Sending Email with cat picture to the one given
+ const [hasEmailSent, setHasEmailSent] = useState(false);
+ function sendEmail(e) {
+  e.preventDefault();
+  emailjs.sendForm('service_vr8yezm',"ChawewoSend",e.target,"OR6W4MRW7Wh9k7RRt")
+  .then(res=>{console.log(res);})
+  .catch(err=> console.log(err));
+  setHasEmailSent(true);
+ }
   return (
+    <section>
+    {hasEmailSent ? (
+      <div className="chawewo__header section__padding" id="home"> 
+      <div className= "chawewo__header-content">
+        <h1 className= "chawewo__header gradient__text fade-in-main">"Hello World"</h1>
+        <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts. It would be appreciated, you can also place your email address below in order to recieve a cat picture that is grabbed from an API when I finally implement it</p>
+        <div>
+          <p>
+            Email has been sent!
+          </p>
+        </div>
+        </div>
+        </div>
+    ) : (
     <div className="chawewo__header section__padding" id="home"> 
       <div className= "chawewo__header-content">
-        <h1 className= "gradient__text fade-in-main">"Hello World"</h1>
+        <h1 className= "chawewo__header gradient__text fade-in-main">"Hello World"</h1>
         <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts. It would be appreciated, you can also place your email address below in order to recieve a cat picture that is grabbed from an API when I finally implement it</p>
+        <form className="chawewo__header-content__input" onSubmit={sendEmail}>
+
+          <input type="hidden" name="cat" value={catUrl} />
+
+          <input onClick={getCat} type="email" name="user_email" placeholder="Your Email Address"/>
+          <button type="submit">Email Test</button>
+        </form>
+        </div>
+      </div>
+    )} </section>
+  )
+}
+/*
         <div className="chawewo__header-content__input">
           <input type="email" placeholder="Your Email Address"/>
           <button type="button">Email Test</button>
         </div>
-        </div>
-      </div>
-  )
-}
-
+*/
 export default Header
