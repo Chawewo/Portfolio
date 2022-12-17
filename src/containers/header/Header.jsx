@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './header.css'; 
 import emailjs from "emailjs-com";
-const apiKey = 'live_dViQmeUAKUExSaFyF3bIrE9ORnkNi7S67UxnNysgNMKr8yf5XahDRFG2CgX5326y';
 const url = 'https://api.thecatapi.com/v1/images/search';
 
 const Header = () => {
@@ -30,8 +29,9 @@ const Header = () => {
   .catch(err=> console.log(err));
   setHasEmailSent(true);
  }
+ 
   return (
-    <section>
+<section> 
     {hasEmailSent ? (
       <div className="chawewo__header section__padding" id="home"> 
       <div className= "chawewo__header-content">
@@ -53,7 +53,7 @@ const Header = () => {
 
           <input type="hidden" name="cat" value={catUrl} />
 
-          <input onClick={getCat} type="email" name="user_email" placeholder="Your Email Address"/>
+          <input onClick={getCat} type="email" name="user_email" placeholder="Your Email Address" required/>
           <button type="submit">Email Test</button>
         </form>
         </div>

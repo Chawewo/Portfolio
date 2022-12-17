@@ -22,13 +22,13 @@ const Contact = () => {
               </h1>
               <form className="row" style={{ margin: '25px  20px 100px' }} onSubmit={sendEmail}>
                 <label style={{ fontFamily: 'Recoleta', color: '#fff' }}> Name </label>
-                <input type="text" name="name" className="form-control style =" />
+                <input type="text" name="name" className="form-control style =" required />
     
                 <label style={{ fontFamily: 'Recoleta', color: '#fff' }}> Email </label>
-                <input type="email" name="user_email" className="form-control" />
+                <input type="email" name="user_email" className="form-control" required />
     
                 <label style={{ fontFamily: 'Recoleta', color: '#fff' }}> Message </label>
-                <textarea name="message" rows="4" className="form-control" />
+                <textarea name="message" rows="4" className="form-control" required />
                 <input type="submit" value="Send" className="form-control btn btn-primary" style={{ marginTop: '30px' }} />
               </form>
             </div>

@@ -29,6 +29,7 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 1.4;
+    text-align: center;
     color: var(--color-text);
     letter-spacing: .05rem;
     margin-top: 1rem;
@@ -40,8 +41,7 @@
     flex-direction: row;
     
 }
-/* changing to input to form */
-.chawewo__header-content__input form {
+.chawewo__header-content__input input {
     flex: 2;
     width: 100%;
     min-height: 50px;
