@@ -1,21 +1,22 @@
 import React from 'react';
 import {Footer, Contact, WhoChawewo, Header} from './containers';
 import { Brand, Navbar} from './components';
-import {BrowserRouter as BrowserRouter,Routes, Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
 /* deleted div app */
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
           <Navbar />
           <Routes> 
-          <Route path='/home' component={<Header/>}  />
-          <Route path='/whoChawewo' exact component={<WhoChawewo/>}  />
-          <Route path='/Contact' exact component={<Contact/>}  />
+
+          <Route  path="/" element={<Header/>}  />
+          <Route path="/who"  element={<WhoChawewo/>}  />
+          <Route path="/contact"  element={<Contact/>}  />
           
-        </Routes>
-      </BrowserRouter>
+        </Routes> 
+      </Router>
 
   )
 }

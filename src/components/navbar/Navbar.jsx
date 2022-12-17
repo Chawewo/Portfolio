@@ -4,20 +4,22 @@ import logo from '../../assets/Chawewo.png';
 import './navbar.css';
 const Menu = () => (
   <>
-        <p><a href="home">Home</a></p>
-        <p><a href="Who">Who am I?</a></p>
+        <p><a href="/">Home</a></p>
+        <p><a href="who">Who am I?</a></p>
+        <p><a href="contact"> Contact </a></p>
         <p><a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
         <p><a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" >Github</a></p>
         <p><a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer"> CatApi</a></p>
+
   </>
 )
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="chawewo__navbar">
+    <div className="chawewo__navbar border-bottom border-secondary" >
       <div className="chawewo__navbar-links">
-        <div className="chawewo__navbar-links_logo">
+        <div className="chawewo__navbar-links_logo" >
           <img src={logo} alt="logo" /> 
           </div>
         <div className="chawewo__navbar-links_container"> 
@@ -25,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="chawewo__navbar-send">
-      <a href="#contact"><button type="button">Send a message</button>
+      <a href="contact"><button type="button">Send a message</button>
       </a>
       </div>
       <div className="chawewo__navbar-menu"> 
