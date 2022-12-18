@@ -36,7 +36,7 @@ const Header = () => {
       <div className="chawewo__header section__padding" id="home"> 
       <div className= "chawewo__header-content">
         <h1 className= "chawewo__header gradient__text fade-in-main">"Hello World"</h1>
-        <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts. It would be appreciated, you can also place your email address below in order to recieve a cat picture that is grabbed from an API when I finally implement it</p>
+        <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts, it would be appreciated. You can also place your email address below in order to recieve a cat picture that is grabbed from an API, I've finally implemented it so please tell me if you do not recieve a cat!</p>
         <div>
           <p>
             Email has been sent!
@@ -48,7 +48,7 @@ const Header = () => {
     <div className="chawewo__header section__padding" id="home"> 
       <div className= "chawewo__header-content">
         <h1 className= "chawewo__header gradient__text fade-in-main">"Hello World"</h1>
-        <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts. It would be appreciated, you can also place your email address below in order to recieve a cat picture that is grabbed from an API when I finally implement it</p>
+        <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts, it would be appreciated. You can also place your email address below in order to recieve a cat picture that is grabbed from an API. I've finally implemented it so please tell me if you do not recieve a cat!</p>
         <form className="chawewo__header-content__input" onSubmit={sendEmail}>
 
           <input type="hidden" name="cat" value={catUrl} />

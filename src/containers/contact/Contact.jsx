@@ -12,11 +12,11 @@ const Contact = () => {
       return (
         <section>
           {hasEmailSent ? (
-            <div className="container rounded text-center " style={{justifyContent: "center",width: '50%', background: '#191919'}}>
+            <div className="container rounded text-center " style={{justifyContent: "center",width: "50%", background: '#191919'}}>
               <h3 style={{ fontFamily: 'Recoleta', color: '#fff', marginTop: "50px"}} id="contact">Thanks for contacting me!</h3>
             </div>
           ) : (
-            <div className="container rounded text-center p-1" style={{justifyContent: "center", backgroundClip: "padding-box",width: '50%', background: '#191919' }}>
+            <div className="container rounded text-center p-1" style={{justifyContent: "center", backgroundClip: "padding-box", maxWidth: "60%",width: 'auto', background: '#191919' }}>
               <h1 style={{ fontFamily: 'Recoleta', color: '#fff' }} id="contact">
                 Contact Me
               </h1>

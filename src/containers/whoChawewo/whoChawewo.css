@@ -1,35 +1,150 @@
-.chawewo__whoChawewo{
-    display:flex;
-    flex-direction: column;
-    padding: 0rem;
-    background: #191919;
-    border-radius: 12px 12px 12px 12px;
+.chawewo__who{
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  overflow:hidden;
 
 }
-.chawewo__whoChawewo-feature{
-    display:flex;
+
+.chawewo__who-content h1 {
+  display: flex;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Recoleta';
+  font-weight: 1000;
+  line-height: 15;
+  font-size: 40px;
+  width: auto;
+  height: 60px;
+  
 }
-.chawewo__whoChawewo .chawewo__features-container__feature{
-    margin: 0;
+.chawewo__who-content h5 {
+  align-items: center;
+  justify-content: center;
+  display:left;
+  width: 600px;
+  font-size:larger;
+  font-family: 'Recoleta';
+  
+    font-size: 20px;
 }
-.chawewo__whoChawewo .chawewo__features-container__feature-text{
-    max-width: 700px;
+@keyframes moving {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
-.chawewo__whoChawewo-heading{
+
+
+.subtitle {
+  color: hsl(0 0% 0% / 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  scale: 150%;
+  transform: translateY(2rem);
+  animation: fadeInUp 4s ease 1s forwards;
+  animation: moving 4s ease 1s forwards;
+}
+.fade {
+  opacity:0;
+  animation: fade-in 5s ease 4s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity:1 ;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translate(1rem,5rem);
+    transform: scale(.75);
+  }
+}
+@media screen and (max-width: 1024px){
+  .chawewo__who {
     display: flex;
-    flex-direction: none;
-    margin: 4rem 0 3rem;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .chawewo__who h1 {
     
+    font-size: 40px;
+    width: auto;
+    height: 100px;
+    
+  }
+  .chawewo__who h5 {
+    
+    font-size: 25px;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    transform: translateY(-10px);
+  }
 }
-.chawewo__whoChawewo-heading h1 {
-    font-family: 'Recoleta';
-    max-width: 200px;
-    /*
-    align-items: center;
-    justify-content: space-between;
+@media screen and (max-width: 700px){
+  .chawewo__who {
+    display: flex;
+    flex-direction: column;
+  }
+  .chawewo__who h1 {
+    
+    font-size: 5.5vw;
+    width: auto;
+    height: 50px;
+  }
+  .chawewo__who h5 {
+    
+    font-size: 25px;
+    width: auto;
+    height: auto;
+    transform: translateY(0px);
+    padding: 0 0;
+  }
+}
+@media screen and (max-width: 550px){
+  .chawewo__who {
+    justify-content: center;
+    display: flex;
+    width: auto;
+    
+  }
+  .chawewo__who h1  {
+    
+    display:flex;
+    width: auto;
+    font-size: 5.5vw;
+    margin: auto;
+    height: 40px;
+  }
+  .chawewo__who h5 {
+    
+    font-size: 25px;
+    display:flex; 
+    width: auto;
+    height: auto;
+    transform: translateY(10px);
+    padding: 0 0;
+  }
+}
+@media screen and (max-width: 400px)
+{
+  .chawewo__who h1  {
+    
+    display:flex;
+    font-size: normal;
+    width: auto;
+    font-size: 5.5vw;
+    margin: auto;
+    height: 40px;
+  }
 
-    font-weight: Bold;
-    max-width: 500px;
-    font-size: 34px;
-*/
 }
