@@ -74,4 +74,37 @@
     cursor: pointer;
     outline: none;
     padding: 0 0rem;
+
+}
+
+.chawewo__header-footer {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bogart';
+    color: white;
+    font-size: 100%;
+}
+.chawewo__header-footer a {
+    margin: 10px;
+}
+
+/*
+style={{fontFamily: "Bogart", color: "white", fontSize: "100%"}}
+*/
+.chawewo__header-footer img {
+    max-width: 10%;
+    width: auto;
+    max-height: 100px;
+    height: auto;
+    object-fit: contain;
+    min-width: 15%;
+}
+
+@media screen and (max-width: 550px) {
+    .chawewo__header-footer a {
+        margin:5px;
+    }
+    .chawewo__header-footer  {
+        font-size: 75%;
+    }
 }

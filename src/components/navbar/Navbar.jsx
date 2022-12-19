@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+
 import logo from '../../assets/Chawewo.png';
 import './navbar.css';
 const Menu = () => (
@@ -7,13 +8,13 @@ const Menu = () => (
         <p><a href="/">Home</a></p>
         <p><a href="who">Who am I?</a></p>
         <p><a href="contact"> Contact </a></p>
+        <p><a href="projects"> Projects </a></p>
         <p><a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
         <p><a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" >Github</a></p>
         <p><a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer"> CatApi</a></p>
 
   </>
 )
-
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
@@ -41,7 +42,8 @@ const Navbar = () => {
             <Menu />
           </div>
           <div className="chawewo__navbar-menu_container-links-send"> 
-      <button type="button" >Send a message</button>
+          <a href="contact"><button type="button">Send a message</button>
+      </a>
           </div>
         </div>
       ) 

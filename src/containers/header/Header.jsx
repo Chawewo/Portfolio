@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './header.css'; 
 import emailjs from "emailjs-com";
+import logo from '../../assets/Linkedin.png';
+import logo2 from '../../assets/Github.png';
 const url = 'https://api.thecatapi.com/v1/images/search';
+
 
 const Header = () => {
   // Grabbing Url from cat api
@@ -57,11 +60,35 @@ const Header = () => {
           <button type="submit">Email Test</button>
         </form>
         </div>
+        
       </div>
-    )} </section>
+         
+          
+    
+    )}
+     <div classname="chawewo__header-footer" >
+          <h4 className='chawewo__header-footer text-left section__padding'>
+            Feel free to reach out to me on:
+            <a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" ><img style={{}} src={logo} alt="logo" /> 
+          </a>
+            <a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" ><img src={logo2} alt="logo"/> 
+          </a>
+         
+          </h4>
+           {/*
+          <p className='chawewo__header-footer'>
+          <a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" ><img style={{scale: "175%"}} src={logo} alt="logo" /> 
+          </a>
+          <a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" ><img src={logo2} alt="logo"/> 
+          </a>
+    </p> */}
+          </div>
+</section>
   )
 }
 /*
+LINKED IN : style={{maxWidth: "9%", height: "100%", transform: "translate(450px,-125px)"}}
+GITHUB: style={{maxWidth: "10%", height: "auto", transform: "translate(516px,-125px)"}}
         <div className="chawewo__header-content__input">
           <input type="email" placeholder="Your Email Address"/>
           <button type="button">Email Test</button>
