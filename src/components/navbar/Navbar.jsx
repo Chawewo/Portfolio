@@ -1,18 +1,17 @@
 import React, {useState} from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/Chawewo.png';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 const Menu = () => (
+
   <>
-        <p><a href="/">Home</a></p>
-        <p><a href="/about">Who am I?</a></p>
-        <p><a href="/contact"> Contact </a></p>
-       {/* <p><a href="projects"> Projects </a></p> awaiting implementation*/} 
+        <p><Link to= "/">Home </Link></p>
+        <p><Link to= "/about"> Who Am I? </Link></p>
+        <p><Link to= "/contact"> Contact Me</Link></p> 
         <p><a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
         <p><a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" >Github</a></p>
         <p><a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer"> CatApi</a></p>
-
   </>
 )
 const Navbar = () => {
@@ -21,15 +20,15 @@ const Navbar = () => {
     <div className="chawewo__navbar border-bottom border-secondary" >
       <div className="chawewo__navbar-links">
         <div className="chawewo__navbar-links_logo" >
-          <img src={logo} alt="logo" /> 
+        <Link to= "/"><img  src={logo} alt="logo" /> </Link>
           </div>
         <div className="chawewo__navbar-links_container"> 
         <Menu />
         </div>
       </div>
       <div className="chawewo__navbar-send">
-      <a href="contact"><button type="button">Send a message</button>
-      </a>
+      <Link to= "/contact"><button type="button">Send a message</button>
+      </Link>
       </div>
       <div className="chawewo__navbar-menu"> 
       {toggleMenu
@@ -42,8 +41,7 @@ const Navbar = () => {
             <Menu />
           </div>
           <div className="chawewo__navbar-menu_container-links-send"> 
-          <a href="contact"><button type="button">Send a message</button>
-      </a>
+          <Link to="/contact"><button type="button">Send a message</button></Link>
           </div>
         </div>
       ) 
