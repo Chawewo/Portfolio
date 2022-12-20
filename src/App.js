@@ -1,6 +1,6 @@
 import React from 'react';
 import {Footer, Contact, WhoChawewo, Header} from './containers';
-import { Brand, Navbar} from './components';
+import {Navbar} from './components';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
@@ -12,9 +12,9 @@ const App = () => {
           <Routes> 
 
           <Route  path="/" element={<Header/>}  />
-          <Route path="/who"  element={<WhoChawewo/>}  />
+          <Route path="/about"  element={<WhoChawewo/>}  />
           <Route path="/contact"  element={<Contact/>}  />
-          
+          {/*<Route path="/project" element={<Project/>} /> awaiting implementation*/}
         </Routes> 
         <Footer />
       </Router>

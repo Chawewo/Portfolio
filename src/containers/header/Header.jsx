@@ -13,7 +13,7 @@ const Header = () => {
   const getCat = () => {
     console.log('Hello World!');
     fetch(url)
-    .then((res) => res.json()) /* */
+    .then((res) => res.json()) // Fetch means it grabs the url from database
     .then((cats) => {
       console.log('Cats: ', cats);
       const catUrl = cats[0].url; //grabs the first element and url
@@ -27,7 +27,7 @@ const Header = () => {
  const [hasEmailSent, setHasEmailSent] = useState(false);
  function sendEmail(e) {
   e.preventDefault();
-  emailjs.sendForm('service_vr8yezm',"ChawewoSend",e.target,"OR6W4MRW7Wh9k7RRt")
+  emailjs.sendForm('service_vr8yezm',"ChawewoSend",e.target,"OR6W4MRW7Wh9k7RRt") /* change public key */
   .then(res=>{console.log(res);})
   .catch(err=> console.log(err));
   setHasEmailSent(true);
@@ -54,7 +54,7 @@ const Header = () => {
         <p>Welcome to my website, it is still currently under production but if you could send a message about anything, errors, bugs, or even your thoughts, it would be appreciated. You can also place your email address below in order to recieve a cat picture that is grabbed from an API. I've finally implemented it so please tell me if you do not recieve a cat!</p>
         <form className="chawewo__header-content__input" onSubmit={sendEmail}>
 
-          <input type="hidden" name="cat" value={catUrl} />
+          <input type="hidden" name="cat" value={catUrl} /> 
 
           <input onClick={getCat} type="email" name="user_email" placeholder="Your Email Address" required/>
           <button type="submit">Email Test</button>
@@ -75,23 +75,10 @@ const Header = () => {
           </a>
          
           </h4>
-           {/*
-          <p className='chawewo__header-footer'>
-          <a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" ><img style={{scale: "175%"}} src={logo} alt="logo" /> 
-          </a>
-          <a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" ><img src={logo2} alt="logo"/> 
-          </a>
-    </p> */}
+           
           </div>
 </section>
   )
 }
-/*
-LINKED IN : style={{maxWidth: "9%", height: "100%", transform: "translate(450px,-125px)"}}
-GITHUB: style={{maxWidth: "10%", height: "auto", transform: "translate(516px,-125px)"}}
-        <div className="chawewo__header-content__input">
-          <input type="email" placeholder="Your Email Address"/>
-          <button type="button">Email Test</button>
-        </div>
-*/
+
 export default Header
