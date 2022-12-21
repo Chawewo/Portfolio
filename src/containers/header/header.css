@@ -107,4 +107,36 @@ style={{fontFamily: "Bogart", color: "white", fontSize: "100%"}}
     .chawewo__header-footer  {
         font-size: 75%;
     }
+    .chawewo__header h1
+    {
+        
+        transform: translate(-5px,0);
+    }
+    .chawewo__header, .chawewo__header-content
+    {
+        scale: 95%;
+        transform: translate(-12px,0);
+        
+        
+    }
+}
+@media screen and (max-width: 376px) {
+    .chawewo__header-footer a {
+        margin:5px;
+    }
+    .chawewo__header-footer  {
+        font-size: 75%;
+    }
+    .chawewo__header h1
+    {
+        
+        transform: translate(3px,0);
+    }
+    .chawewo__header, .chawewo__header-content
+    {
+        scale: 95%;
+        transform: translate(-22px,0);
+        
+        
+    }
 }

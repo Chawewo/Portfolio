@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="chawewo__footer section__padding ">
       <div className="chawewo__footer-content">
       
-     <h5 className='gradient__text text-center'>
+     <h5 className='gradient__text text-center ' style={{transform: "translateY(-20px"}}>
       <p >
          This entire website was made by me, thanks for visiting!
       </p>
