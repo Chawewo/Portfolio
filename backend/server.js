@@ -1,15 +1,18 @@
 import express from "express"
 import mysql from "mysql2"
-import React from 'react'
-import renderToString from 'react-dom/server'
+import renderToString from 'react-dom'
 // backend/index.js
 import App from '../frontend/src/App'
 
+
 const app = express();
+
+
 
 app.use(express.static('frontend/public'));
 
 app.get('*', (req, res) => {
+  const App = require('./frontend/src/App').default;
   const html = renderToString(<App />);
   res.send(`
     <!DOCTYPE html>
@@ -19,7 +22,7 @@ app.get('*', (req, res) => {
       </head>
       <body>
         <div id="root">${html}</div>
-        <script src="/bundle.js"></script>
+        <script src="/index.js"></script>
       </body>
     </html>
   `);
@@ -28,6 +31,7 @@ app.get('*', (req, res) => {
 app.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });
+
 
 // need to use mysql2  as it is an upgrade from other option of downgrading mysql
 
