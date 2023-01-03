@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start node client.js",
-    "build": "react-scripts build",
+    "build": "babel ./src --out-dir ./src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +39,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
   }
 }

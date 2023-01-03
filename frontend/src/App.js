@@ -1,26 +1,40 @@
-import React from 'react';
-import {Footer, Contact, WhoChawewo, Header} from './containers';
-import {Navbar, Background} from './components';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import './App.css';
+import React from "react";
+import  {StaticRouter}  from "react-router-dom/server";
+import { Footer, Contact, WhoChawewo, Header } from "./containers";
+import { Navbar, Background } from "./components";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
-
-const App = () => {
+const App = (props) => {
   return (
-    <BrowserRouter>
-   <Navbar />
-    <Routes>
-     
-          <Route exact path='/' element={< Header />}> </Route>
-          <Route path='/about' element={< WhoChawewo />}> </Route>
-          <Route path='/contact' element={< Contact />}> </Route> 
-   </Routes>
-   <Footer/>
+    <StaticRouter location={props.location} context={props.context}>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Header />} />
+        <Route path="/about" element={<WhoChawewo />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </StaticRouter>
+  );
+};
 
-</BrowserRouter>
+export default App;
 
+/*
+const App = (props) => {
+  return (
+    <BrowserRouter >
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Header />} />
+        <Route path="/about" element={<WhoChawewo />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
+*/

@@ -1,5 +1,6 @@
-export {default as Footer} from './footer/Footer';
-export {default as Header} from './header/Header';
-export {default as WhoChawewo} from './whoChawewo/WhoChawewo';
-export {default as Contact} from './contact/Contact';
-export {default as Project} from './project/Project';
+// index.js
+export { default as Footer } from './footer/Footer.jsx';
+export { default as Header } from './header/Header.jsx';
+export { default as WhoChawewo } from './whoChawewo/WhoChawewo.jsx';
+export { default as Contact } from './contact/Contact.jsx';
+export { default as Project } from './project/Project.jsx';

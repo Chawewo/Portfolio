@@ -1,0 +1,8 @@
+{
+  "presets": ["@babel/preset-react", "@babel/env"],
+  "plugins": [
+    ["@babel/plugin-syntax-jsx", { "jsx": "preserve" }],
+    "@babel/plugin-transform-react-jsx",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
