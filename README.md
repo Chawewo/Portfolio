@@ -46,3 +46,11 @@ This will allow us to utilize the react icons library which is needed for the me
 ### `npm i emailjs`
 
 In order to utilize the email service you must create an account with EmailJS.
+
+### ` Universal Rendering `
+
+Universal rendering or Isomorphic rendering is utilizing server-side rendering along with client-side rendering to use the benefits of both sides. We need to transpile the code from both sides in order to have compatibility with wider ranges of environments. 
+
+### npm `install --save-dev @babel/core @babel/cli`
+
+We utilize Babel to transpile the javascript code we have to use its features in older environments. Afterwards we create a .babelrc file that holds the presets for the transpiling
