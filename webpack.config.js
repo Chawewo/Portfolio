@@ -1,8 +1,10 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   target: 'node',
+  mode: 'development',
   externals: [nodeExternals()],
   entry: './frontend/src/App',
   output: {
@@ -28,6 +30,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/',}
           },
         ],
       },
@@ -44,10 +49,19 @@ module.exports = {
       },
       
       {
-        test: /\.css$/,
-        use: ['css-loader'],
-        sideEffects: true
+        
+          test: /\.css$/,
+          use: [ MiniCssExtractPlugin.loader, 'css-loader'],
+          sideEffects: true
+        
+        
       }
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+    }),
+  ],
+  
 };

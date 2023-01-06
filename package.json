@@ -4,7 +4,6 @@
     "build:client": "webpack --config webpack.config.js",
     "start": "npm run build:client && npm run build:server && node backend/server.js"
   },
-
   "dependencies": {
     "@babel/core": "^7.20.7",
     "nodemon": "^2.0.20",
@@ -22,6 +21,7 @@
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.2",
     "style-loader": "^3.3.1",
     "webpack-cli": "^5.0.1",
     "webpack-node-externals": "^3.0.0"

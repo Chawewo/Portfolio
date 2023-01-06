@@ -1,5 +1,5 @@
 import React from "react";
-import  {StaticRouter}  from "react-router-dom/server";
+import { StaticRouter } from "react-router-dom/server";
 import { Footer, Contact, WhoChawewo, Header } from "./containers";
 import { Navbar, Background } from "./components";
 import { Route, Routes } from "react-router-dom";
@@ -20,6 +20,7 @@ const App = (props) => {
 };
 
 export default App;
+
 
 /*
 const App = (props) => {
