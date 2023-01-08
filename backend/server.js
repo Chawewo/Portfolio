@@ -2,7 +2,6 @@ const express = require('express');
 const React = require('react');
 const { renderToString } = require('react-dom/server');
 const App = require('../backend/build/bundle');
-const { matchPath } = require('react-router-dom');
 const path = require('path');
 
 const app = express();
