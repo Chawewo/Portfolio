@@ -17,7 +17,6 @@
   font-size: 40px;
   width: auto;
   height: 60px;
-  
 }
 .chawewo__who-content h5 {
   align-items: center;
@@ -35,10 +34,18 @@
   }
   to {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-18px);
   }
 }
-
+.chawewo__who img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transform: translate(350px,-570px);
+  margin-block-end: -500px;
+  object-fit: cover;
+}
 
 .subtitle {
   color: hsl(0 0% 0% / 0.7);
@@ -46,7 +53,7 @@
   font-weight: 400;
   opacity: 0;
   scale: 150%;
-  transform: translateY(2rem);
+  transform: translateY(0rem);
   animation: fadeInUp 4s ease 1s forwards;
   animation: moving 4s ease 1s forwards;
 }
@@ -89,6 +96,14 @@
     padding: 2rem;
     transform: translateY(-10px);
   }
+  .chawewo__who img {
+    padding-top: 1rem;
+    max-width: 80%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    transform:none
+  }
 }
 @media screen and (max-width: 700px){
   .chawewo__who {
@@ -108,6 +123,14 @@
     height: auto;
     transform: translateY(0px);
     padding: 0 0;
+  }
+  .chawewo__who img {
+    padding-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    transform:none
   }
 }
 @media screen and (max-width: 550px){
@@ -134,6 +157,14 @@
     transform: translateY(10px);
     padding: 0 0;
   }
+  .chawewo__who img {
+    padding-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    transform:none
+  }
 }
 @media screen and (max-width: 400px)
 {
@@ -146,5 +177,12 @@
     margin: auto;
     height: 40px;
   }
-
+  .chawewo__who img {
+    padding-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    transform:none
+  }
 }

@@ -10,7 +10,7 @@ const Footer = () => {
       <p >
          This entire website was made by me, thanks for visiting!
       </p>
-     © Chawewo 2022
+     © Chawewo 2023
      </h5>
     </div>
     </div>

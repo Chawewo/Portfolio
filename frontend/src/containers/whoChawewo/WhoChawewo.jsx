@@ -1,6 +1,6 @@
 import React from 'react';
 import './whoChawewo.css';
-
+import Headshot from '../../assets/Headshot.jpg';
 const WhoChawewo = () => {
   return (
  <div className="chawewo__who section__padding" id="about">
@@ -20,8 +20,9 @@ In addition to my coursework, I have also been actively learning on my own throu
 <br/>
 I am driven and self-motivated, and I am always looking for opportunities to challenge myself and improve my skills. In the future, I hope to use my knowledge and expertise to create innovative and useful applications that solve real-world problems.
 I am excited to continue my journey as a full stack developer and make a positive impact through my work. Thank you for visiting my website. Feel free to reach out to me if you have any questions or just want to chat about technology and programming.
-  </h5>
-  
+   </h5>
+  <img className="fade"  src={Headshot} alt = " " />
+ 
   </div>
   </div>
   )

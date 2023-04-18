@@ -54,3 +54,7 @@ Universal rendering or Isomorphic rendering is utilizing server-side rendering a
 ### npm `install --save-dev @babel/core @babel/cli`
 
 We utilize Babel to transpile the javascript code we have to use its features in older environments. Afterwards we create a .babelrc file that holds the presets for the transpiling
+
+### `Webpack Config`
+
+The webpack config is utilized to load images and javascript code into html in order to properly utilize server-side rendering
