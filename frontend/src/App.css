@@ -17,6 +17,13 @@ a {
     text-decoration: none;
     -webkit-text-stroke: 1px #000000;
 }
+.gradient-background {
+  height: 2000px; 
+  background: linear-gradient(to bottom, black, rgb(53, 53, 53), black);
+  background-attachment: fixed;
+  background-size: 100% 2000px;
+}
+
 .gradient__bg{
 /* Absolute makes sure that the black stays with the header */
 
@@ -40,7 +47,8 @@ background-color: 'black';
   background:linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
 
 
- }
+ } 
+ 
 .gradient__text {
     background:var(--gradient-text);
     background-clip: text;

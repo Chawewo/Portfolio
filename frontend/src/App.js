@@ -28,6 +28,7 @@ const App = (props) => {
 const App = () => {
   return (
     <BrowserRouter>
+    <div className="gradient-background">
     <Navbar />
     <Routes>
         <Route exact path="/" element={<Header />} />
@@ -36,6 +37,8 @@ const App = () => {
         <Route path="*" element={<Header />} />
       </Routes>
       <Footer />
+      </div>
+
     </BrowserRouter>
   )
 }
