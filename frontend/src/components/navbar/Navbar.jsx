@@ -9,7 +9,7 @@ const Menu = () => (
         <p><Link to= "/">Home </Link></p>
         <p><Link to= "/about"> Who Am I? </Link></p>
         <p><Link to= "/contact"> Contact Me</Link></p> 
-        <p><a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/chawewo" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
         <p><a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" >Github</a></p>
         <p><a href="https://thecatapi.com/" target="_blank" rel="noopener noreferrer"> CatApi</a></p>
   </>

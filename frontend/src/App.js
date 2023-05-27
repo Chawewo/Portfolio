@@ -1,29 +1,12 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { StaticRouter } from "react-router-dom/server";
-import { Footer, Contact, WhoChawewo, Header } from "./containers";
+import { Footer, Contact, WhoChawewo, Header, Project } from "./containers";
 import { Navbar, Background } from "./components";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 
 
-/*
-const App = (props) => {
-  return (
-    // Recieves location and context from server to display 
-    <StaticRouter location={props.location} context={props.context}>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Header />} />
-        <Route path="/about" element={<WhoChawewo />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </StaticRouter>
-    
-  );
-};
-*/
 
 const App = () => {
   return (
@@ -36,6 +19,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Header />} />
       </Routes>
+      <Project />
       <Footer />
       </div>
 
