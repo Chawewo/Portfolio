@@ -1,0 +1,83 @@
+.projects {
+  position: relative;
+  padding: 2em 0;
+  list-style-type: none;
+}
+
+.projects:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #000;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 2em;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ccc; 
+  overflow: hidden;
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* Add a shadow for depth */
+  border: 2px solid #fff; /* Add a border for definition */
+}
+
+.project:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.24), 0 5px 15px rgba(0,0,0,0.19); /* Add a hover effect */
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h2 {
+  display: none;
+}
+
+.project p {
+  display: none;
+}
+
+.project.project-selected {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw; /* viewport width */
+  height: 70vh; /* viewport height */
+  padding: 2em;
+  border-radius: 20px; /* adjust as needed */
+  background: #fff;
+  overflow: auto;
+  z-index: 9999;
+}
+
+.project.project-selected img {
+  display: none;
+}
+
+.project.project-selected h2 {
+  display: block;
+}
+
+.project.project-selected p {
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
