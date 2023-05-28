@@ -17,12 +17,7 @@ a {
     text-decoration: none;
     -webkit-text-stroke: 1px #000000;
 }
-.gradient-background {
-  height: 2000px; 
-  background: linear-gradient(to bottom, black, rgb(53, 53, 53), black);
-  background-attachment: fixed;
-  background-size: 100% 2000px;
-}
+
 
 .gradient__bg{
 /* Absolute makes sure that the black stays with the header */
