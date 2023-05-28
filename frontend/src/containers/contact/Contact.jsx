@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import emailjs from "emailjs-com";
+import logo from '../../assets/Linkedin.png';
+import logo2 from '../../assets/Github.png';
 const Contact = () => {
     const [hasEmailSent, setHasEmailSent] = useState(false);
     function sendEmail(e) {
@@ -33,7 +35,19 @@ const Contact = () => {
               </form>
             </div>
           )}
+           <div className="chawewo__header-footer" >
+          <h4 className='chawewo__header-footer text-left section__padding'>
+            Feel free to reach out to me on:
+            <a href="https://www.linkedin.com/in/davidtrujillo-liprofile/" target="_blank" rel="noopener noreferrer" ><img style={{}} src={logo} alt="logo" /> 
+          </a>
+            <a href="https://github.com/Chawewo" target="_blank" rel="noopener noreferrer" ><img src={logo2} alt="logo"/> 
+          </a>
+         
+          </h4>
+           
+          </div>
         </section>
+        
       );
     };
     

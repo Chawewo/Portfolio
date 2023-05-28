@@ -14,3 +14,26 @@
     justify-content: center;
 }
 */
+
+.chawewo__header-footer {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bogart';
+    color: white;
+    font-size: 100%;
+}
+.chawewo__header-footer a {
+    margin: 10px;
+}
+
+/*
+style={{fontFamily: "Bogart", color: "white", fontSize: "100%"}}
+*/
+.chawewo__header-footer img {
+    max-width: 10%;
+    width: auto;
+    max-height: 100px;
+    height: auto;
+    object-fit: contain;
+    min-width: 15%;
+}
