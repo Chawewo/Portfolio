@@ -2,11 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: "red";
     padding: 2rem 2rem;
     z-index: 4;
-    
+    opacity: 0;
+    animation: fade-in 4s ease 6s forwards;
 }
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.chawewo__navbar * {
+    opacity: 0;
+    animation: fade-in 2s ease 4s forwards;
+}
+
 .chawewo__navbar-links {
     flex: 1;
     display: flex;
