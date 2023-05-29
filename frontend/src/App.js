@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 //import { StaticRouter } from "react-router-dom/server";
 import { Footer, Contact, WhoChawewo, Header, Project } from "./containers";
-import { Navbar,  } from "./components";
+import { Navbar } from "./components";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 
