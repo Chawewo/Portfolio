@@ -1,6 +1,45 @@
-import './project.css';
-import React, { useState } from 'react';
+// ../frontend/assets/Headshot.jpg
+import React from "react";
+import './project.css'; // import your css
+import Headshot from '../../assets/Headshot.jpg';
 
+const Project = () => {
+    const projects = [
+        {
+            title: "Project 1",
+            description: "This is a description of Project 1",
+            imageUrl: Headshot,
+            githubLink: "https://github.com/yourusername/project1"
+        },
+        {
+            title: "Project 2",
+            description: "This is a description of Project 2",
+            imageUrl: "/path/to/image2.jpg",
+            githubLink: "https://github.com/yourusername/project2"
+        },
+        // add more projects here
+    ];
+
+    return (
+        <div>
+            {projects.map((project, index) => (
+                <div key={index} className="project-container">
+                    <div className="project" style={{backgroundImage: `url(${project.imageUrl})`}}></div>
+                    <div className="project-content">
+                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="button">{project.title}</a>
+                    </div>
+                    <div className="project-description-card">
+                        <p>{project.description}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+};
+
+export default Project;
+
+/*
 const projects = [
   {
   id: 1,
@@ -60,4 +99,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Project; */
