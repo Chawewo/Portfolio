@@ -23,17 +23,18 @@ const Header = () => {
       console.log( 'Error: ', error);
     });
   }
- // Sending Email with cat picture to the one given
+
  const [hasEmailSent, setHasEmailSent] = useState(false);
  function sendEmail(e) {
   e.preventDefault();
-  emailjs.sendForm('service_vr8yezm',"ChawewoSend",e.target,"OR6W4MRW7Wh9k7RRt") /* change public key */
+  emailjs.sendForm('service_vr8yezm',"ChawewoSend",e.target,"OR6W4MRW7Wh9k7RRt") 
   .then(res=>{console.log(res);})
   .catch(err=> console.log(err));
   setHasEmailSent(true);
  }
  
   return (
+    /*
 <section> 
     {hasEmailSent ? (
       <div className="chawewo__header section__padding" id="home"> 
@@ -65,7 +66,7 @@ const Header = () => {
          
           
     
-    )}
+    )} */
      <div className="chawewo__header-footer" >
           <h4 className='chawewo__header-footer text-left section__padding'>
             Feel free to reach out to me on:
@@ -77,7 +78,7 @@ const Header = () => {
           </h4>
            
           </div>
-</section>
+//</section>
   )
 }
 
