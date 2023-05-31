@@ -1,23 +1,23 @@
 // ../frontend/assets/Headshot.jpg
 import React from "react";
 import './project.css'; // import your css
-import Headshot from '../../assets/Headshot.jpg';
+import Cache from '../../assets/CPU.jpg';
 
 const Project = () => {
     const projects = [
         {
-            title: "Project 1",
-            description: "This is a description of Project 1",
-            imageUrl: Headshot,
-            githubLink: "https://github.com/yourusername/project1"
+            title: "Cache Simulator",
+            description: "This project is a C++ program simulating a simplified CPU cache hierarchy (L1, L2, and L3) and calculates the total number of CPU cycles required for accessing a series of memory addresses. The cache hierarchy follows a Least Recently Used (LRU) replacement policy which means items are organized in order of use, allowing us to identify which item has been used the most/least. The simulator accounts for cache misses and hits at each level before resorting to main memory to which the final output is the total number of CPU cycles used for all memory accesses.",
+            imageUrl: Cache,
+            githubLink: "https://github.com/Chawewo/Cache-Sim"
         },
+        /*
         {
-            title: "Project 2",
+            title: "",
             description: "This is a description of Project 2",
             imageUrl: "/path/to/image2.jpg",
             githubLink: "https://github.com/yourusername/project2"
-        },
-        // add more projects here
+        },*/
     ];
 
     return (

@@ -147,6 +147,12 @@ background-color: 'black';
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Fjalla';
+    src: url('fonts/Fjalla.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
   :root {
     --font-family: 'Knewave', 'Bogart', Cursive;
     --gradient-text: linear-gradient(89.97deg, #00ffd5 1.84%, #1c56e8 102.67%);
