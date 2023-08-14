@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 //import { StaticRouter } from "react-router-dom/server";
 import { Footer, Contact, WhoChawewo, Header, Project } from "./containers";
-import { Navbar } from "./components";
+import { Background, Navbar } from "./components";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -11,7 +11,7 @@ import "./App.css";
 const App = () => {
   return (
     <BrowserRouter>
-    <div className="gradient-background">
+    <Background/>
     <Navbar />
     <Routes>
         <Route exact path="/" element={<Header />} />
@@ -21,7 +21,7 @@ const App = () => {
       </Routes>
       <Project />
       <Footer />
-      </div>
+      
 
     </BrowserRouter>
   )
