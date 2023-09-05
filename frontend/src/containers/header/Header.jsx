@@ -34,7 +34,7 @@ const Header = () => {
  }
  
   return (
-    /*
+    
 <section> 
     {hasEmailSent ? (
       <div className="chawewo__header section__padding" id="home"> 
@@ -66,7 +66,7 @@ const Header = () => {
          
           
     
-    )} */
+    )} 
      <div className="chawewo__header-footer" >
           <h4 className='chawewo__header-footer text-left section__padding'>
             Feel free to reach out to me on:
@@ -78,7 +78,7 @@ const Header = () => {
           </h4>
            
           </div>
-//</section>
+</section>
   )
 }
 
