@@ -34,7 +34,7 @@ const Background = () => {
   const containerStyles = {
     width: '100%',
     height: '100vh', // Adjust this based on your design
-    overflow: 'hidden',
+    // overflow: 'hidden', Removing this will hide rest of background
   };
 
   // Calculate the vertical position of the image based on the scroll
