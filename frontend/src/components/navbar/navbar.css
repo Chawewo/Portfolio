@@ -3,9 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 2rem;
-    z-index: 4;
+    z-index: 10;
     opacity: 0;
-    animation: fade-in 4s ease 6s forwards;
+    animation: fade-in 1s ease 1s forwards;
 }
 
 @keyframes fade-in {
@@ -14,8 +14,7 @@
 }
 
 .chawewo__navbar * {
-    opacity: 0;
-    animation: fade-in 2s ease 4s forwards;
+    z-index:10
 }
 
 .chawewo__navbar-links {

@@ -3,8 +3,8 @@ import './whoChawewo.css';
 import Headshot from '../../assets/Headshot.jpg';
 const WhoChawewo = () => {
   return (
- <div className="chawewo__who section__padding" id="about">
-  <div className= "chawewo__who-content" style={{zIndex: "0"}}>
+ <div className="chawewo__who section__padding\" id="about">
+  <div className= "chawewo__who-content" style={{zIndex: "-1"}}>
   <h1 className="gradient__text subtitle text-center">
      Hello, my name is David.
      </h1>
