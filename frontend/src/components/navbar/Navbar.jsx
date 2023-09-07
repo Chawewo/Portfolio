@@ -17,7 +17,7 @@ const Menu = () => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="chawewo__navbar border-bottom border-secondary" >
+    <div className="chawewo__navbar " >
       <div className="chawewo__navbar-links">
         <div className="chawewo__navbar-links_logo" >
         <Link to= "/"><img  src={logo} alt="logo" /> </Link>
@@ -32,8 +32,8 @@ const Navbar = () => {
       </div>
       <div className="chawewo__navbar-menu"> 
       {toggleMenu
-       ? <RiCloseLine color="fff" size ={27} onClick ={() => setToggleMenu(false)}  />
-       : <RiMenu3Line color="fff" size ={27} onClick ={() => setToggleMenu(true)} />
+       ? <RiCloseLine color="0000" size ={27} onClick ={() => setToggleMenu(false)}  />
+       : <RiMenu3Line color="0000" size ={27} onClick ={() => setToggleMenu(true)} />
       }
       {toggleMenu && (
         <div className="chawewo__navbar-menu_container fade-in">

@@ -158,7 +158,7 @@ background-color: 'black';
   }
   :root {
     --font-family: 'Knewave', 'Bogart', Cursive;
-    --gradient-text: linear-gradient(89.97deg, #00ffd5 1.84%, #1c56e8 102.67%);
+    --gradient-text: linear-gradient(89.97deg, #a60e0e 1.84%, rgb(86, 1, 1) 102.67%);
     --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
     
     --color-bg:  hsl(180, 8%, 3%);

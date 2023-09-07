@@ -6,11 +6,11 @@ const Footer = () => {
     <div className="chawewo__footer section__padding ">
       <div className="chawewo__footer-content">
       
-     <h5 className='gradient__text text-center ' style={{transform: "translateY(-20px"}}>
+     <h5 className='chawewo__footer-text text-center ' style={{transform: "translateY(-20px"}}>
       <p >
          This entire website was made by me, thanks for visiting!
       </p>
-     © Chawewo 2023
+      -Chawewo 2023
      </h5>
     </div>
     </div>

@@ -15,6 +15,7 @@
     align-items: center;
     flex-direction:column;
     margin-right: 0rem;
+    
 }
 .chawewo__header-content h1 {
     font-family: var(--font-family);
@@ -26,11 +27,11 @@
 .chawewo__header-content p {
     font-family: 'Recoleta';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
-    color: var(--color-text);
+    color: black;
     letter-spacing: .05rem;
     margin-top: 1rem;
 }
@@ -54,7 +55,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     outline: none;
-    color: #fff;
+    color: #ffffff;
 }
 .chawewo__header-content__input button {
     flex: 0.6;
@@ -81,7 +82,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Bogart';
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 100%;
 }
 .chawewo__header-footer a {
