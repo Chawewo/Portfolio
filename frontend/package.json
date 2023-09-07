@@ -2,6 +2,12 @@
   "name": "chawewo",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,12 +21,6 @@
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

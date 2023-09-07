@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f85d0c7f.css",
-    "main.js": "/static/js/main.3fc00363.js",
+    "main.css": "/static/css/main.cca6ccb3.css",
+    "main.js": "/static/js/main.dde5edc9.js",
+    "static/media/background.jpg": "/static/media/background.5253f830a2c17a1e5543.jpg",
     "static/media/Headshot.jpg": "/static/media/Headshot.62acb3ca3a55fd5097ae.jpg",
     "static/media/Recoleta.otf": "/static/media/Recoleta.fd9bfd35d1085b5c6511.otf",
     "static/media/Bogart.ttf": "/static/media/Bogart.3c8542e7d3d98f831cb1.ttf",
+    "static/media/CPU.jpg": "/static/media/CPU.4457887a2f77eaf4d102.jpg",
+    "static/media/Fjalla.ttf": "/static/media/Fjalla.df4643bd77ac56f2f8a2.ttf",
     "static/media/Github.png": "/static/media/Github.0d00baba6164055dbb22.png",
     "static/media/Chawewo.png": "/static/media/Chawewo.f9cd15499a426caa40f0.png",
     "static/media/Knewave.ttf": "/static/media/Knewave.1db5694b7a2fc23ca86b.ttf",
     "static/media/Linkedin.png": "/static/media/Linkedin.6892b3ae328c7a1e055f.png",
     "index.html": "/index.html",
-    "main.f85d0c7f.css.map": "/static/css/main.f85d0c7f.css.map",
-    "main.3fc00363.js.map": "/static/js/main.3fc00363.js.map"
+    "main.cca6ccb3.css.map": "/static/css/main.cca6ccb3.css.map",
+    "main.dde5edc9.js.map": "/static/js/main.dde5edc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f85d0c7f.css",
-    "static/js/main.3fc00363.js"
+    "static/css/main.cca6ccb3.css",
+    "static/js/main.dde5edc9.js"
   ]
 }
