@@ -17,6 +17,11 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter.ttf') format("truetype");
+  
+}
 :root {
   --font-family: 'Knewave', 'Bogart', Cursive;
   --gradient-text: linear-gradient(89.97deg, #ff2306 1.84%, #ff5601 102.67%);
