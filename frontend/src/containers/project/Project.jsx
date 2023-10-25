@@ -1,5 +1,35 @@
-// ../frontend/assets/Headshot.jpg
 import React from "react";
+import './project.css'; // Import your existing CSS
+import Cache from '../../assets/CPU.jpg';
+
+const Project = ({ title, description, imageUrl, githubLink }) => {
+  const parallaxStyle = {
+    backgroundAttachment: "fixed",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundImage: `url(${Cache})`,
+    
+  };
+
+  return (
+    <div className="project-container">
+      <div className="project-image" style={parallaxStyle} />
+      <div className="project-details">
+      <a href="https://github.com/Chawewo/Cache-Sim" target="_blank" rel="noopener noreferrer">
+        
+        <button >Cache Simulator</button>
+        </a>
+        <p>This project is a C++ program simulating a simplified CPU cache hierarchy (L1, L2, and L3) and calculates the total number of CPU cycles required for accessing a series of memory addresses. The cache hierarchy follows a Least Recently Used (LRU) replacement policy which means items are organized in order of use, allowing us to identify which item has been used the most/least. The simulator accounts for cache misses and hits at each level before resorting to main memory to which the final output is the total number of CPU cycles used for all memory accesses.
+            </p>
+      </div>
+    </div>
+  );
+};
+
+export default Project;
+
+
+/*import React from "react";
 import './project.css'; // import your css
 import Cache from '../../assets/CPU.jpg';
 
@@ -11,13 +41,13 @@ const Project = () => {
             imageUrl: Cache,
             githubLink: "https://github.com/Chawewo/Cache-Sim"
         },
-        /*
+        
         {
             title: "",
             description: "This is a description of Project 2",
             imageUrl: "/path/to/image2.jpg",
             githubLink: "https://github.com/yourusername/project2"
-        },*/
+        },*/ /*
     ];
 
     return (
@@ -28,7 +58,7 @@ const Project = () => {
                     <div className="project-content">
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="button">{project.title}</a>
                     </div>
-                    <div className="project-description-card">
+                    <div className={`project-description-card`}>
                         <p>{project.description}</p>
                     </div>
                 </div>
@@ -38,7 +68,7 @@ const Project = () => {
 };
 
 export default Project;
-
+*/
 /*
 const projects = [
   {

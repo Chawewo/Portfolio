@@ -1,25 +1,98 @@
+/* Project.css */
 .project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  background-position: 60% center;
+  flex: 1;
+  border-radius: 0px 20px 20px 0px;
+  height: 30vw; /* Adjust the image height as needed */
+  background-attachment: fixed;
+}
+
+.project-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.project-details a {
+  font-size: 24px;
+  font-family: 'Inter';
+  margin: 15%;
+  
+}
+
+.project-details p {
+  margin-top: 10px;
+}
+
+.project-details button {
+  background-color: #2a2929;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-details button:hover {
+  background-color: #707172;
+}
+@media (max-width: 1280px){
+  
+.project-image {
+  background-position: 60% center;
+  height: 50vw;
+}
+}
+@media (max-width: 769px) {
+.project-image {
+    background-position: 60% center;
+    height: 60vw;
+    background-size: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .project-image {
+    background-position: 55% center;
+    background-size: 30%;
+    height: 50vw;
+  }
+}
+
+/*.project-container {
   position: relative;
   margin-bottom: 20px;
 }
 
 .project {
-  position: relative;
+
+  position: 20%, 30%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 23zvw;
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
-  height: 400px;
+  height: 35vw;
+  margin-left: 50%;
   filter: brightness(0.7) blur(2px);
+  border:  solid #000000; /* Border properties here 
+  border-radius: 10% 0 0 10%;
 }
 
 .project-content {
+
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -150%);
+  transform: translate(100%, 100%);
   text-align: center;
 }
 
@@ -35,7 +108,7 @@
   font-size: 25px;
   color: black;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5); /* semi-transparent black */
+  background-color: rgba(255, 255, 255, 0.5); /* semi-transparent black 
 }
 .button:before {
   content: "";
@@ -90,14 +163,19 @@
   color: rgb(0, 0, 0);
   padding: 30px;
   font-size: 95%;
-  backdrop-filter: blur(2px); /* Add a blur effect to the background */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(2px); /* Add a blur effect to the background 
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background 
 }
-
+.project-description-card-project1 {
+  scale: 2%;
+}
 
 @media only screen and (min-width: 250px) {
   .project-content {
       transform: translate(-50%, -200%);
+  }
+  .project {
+    background-position: -1vw;
   }
 }
 
@@ -120,7 +198,10 @@
   .project-content {
       transform: translate(-50%, -150%);
   }
-}
+  .project {
+    background-position: -8vw;
+  }
+} */
 /* 
 .projects {
   position: relative;
