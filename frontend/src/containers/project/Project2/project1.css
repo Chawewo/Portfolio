@@ -1,0 +1,67 @@
+/* Project.css */
+.project1-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.project1-image {
+    background-position: 60% center;
+    flex: 1;
+    border-radius: 20px 0px 0px 20px;
+    height: 30vw; /* Adjust the image height as needed */
+    background-attachment: fixed;
+  }
+  
+.project1-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+.project1-details a {
+    font-size: 24px;
+    font-family: 'Inter';
+    margin: 15%;
+    
+  }
+  
+.project1-details p {
+    margin-top: 10px;
+  }
+  
+.project1-details button {
+    background-color: #2a2929;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.project1-details button:hover {
+    background-color: #707172;
+  }
+  @media (max-width: 1280px){
+    
+.project1-image {
+    background-position: 60% center;
+    height: 50vw;
+  }
+  }
+  @media (max-width: 769px) {
+.project1-image {
+      background-position: 63% center;
+      height: 60vw;
+      background-size: 50%;
+    }
+  }
+  @media (max-width: 375px) {
+.project1-image {
+      background-position: 55% center;
+      background-size: 30%;
+      height: 50vw;
+    }
+  }
