@@ -1,13 +1,13 @@
 import React from "react";
 import './project1.css'; // Import your existing CSS
-import CPU from '../../../assets/Cache.jpg';
+import Vitamatch from '../../../assets/Vitamatch.jpg';
 
 const project1 = ({ title, description, imageUrl, githubLink }) => {
   const parallaxStyle = {
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundImage: `url(${CPU})`,
+    backgroundImage: `url(${Vitamatch})`,
     
   };
 
