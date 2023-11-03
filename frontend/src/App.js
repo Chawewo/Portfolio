@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 //import { StaticRouter } from "react-router-dom/server";
-import { Footer, Contact, WhoChawewo, Header, Project, Project1 } from "./containers";
+import { Footer, Contact, WhoChawewo, Header, Project, Vitamatch } from "./containers";
 import { Background, Navbar } from "./components";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="*" element={<Header />} />
       </Routes>
       <Project />
-      <Project1 />
+      <Vitamatch />
       <Footer />
       
 

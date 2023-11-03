@@ -1,0 +1,71 @@
+/* vitamatch.css */
+.vitamatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+    margin: 0px;
+    margin-bottom: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    
+  }
+  
+.vitamatch-image {
+  background-position-x: 200px;
+  flex: 1;
+  border-radius: 40px 0px 0px 40px;
+  height: 60vw; /* Adjust the image height as needed */
+  background-attachment: fixed;
+  }
+  
+.vitamatch-details {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+  }
+  
+.vitamatch-details a {
+    font-size: 24px;
+    font-family: 'Inter';
+    margin: 35%;
+    
+    
+  }
+  
+.vitamatch-details p {
+    margin-top: 10px;
+  }
+  
+.vitamatch-details button {
+    background-color: #2a2929;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*
+.vitamatch-details button:hover {
+    background-color: #707172;
+  }
+  @media (max-width: 1280px){
+    
+.vitamatch-image {
+    background-position: 3% center;
+    height: 50vw;
+  }
+  }
+  @media (max-width: 769px) {
+.vitamatch-image {
+      height: 60vw;
+      background-position: 25% center;
+    }
+  }
+  @media (max-width: 375px) {
+.vitamatch-image {
+      background-position: 5% center;
+      height: 50vw;
+    }
+  }
+*/

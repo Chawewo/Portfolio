@@ -16,7 +16,6 @@ const Project = ({ title, description, imageUrl, githubLink }) => {
       <div className="project-image" style={parallaxStyle} />
       <div className="project-details">
       <a href="https://github.com/Chawewo/Cache-Sim" target="_blank" rel="noopener noreferrer">
-        
         <button >Cache Simulator</button>
         </a>
         <p>This project is a C++ program simulating a simplified CPU cache hierarchy (L1, L2, and L3) and calculates the total number of CPU cycles required for accessing a series of memory addresses. The cache hierarchy follows a Least Recently Used (LRU) replacement policy which means items are organized in order of use, allowing us to identify which item has been used the most/least. The simulator accounts for cache misses and hits at each level before resorting to main memory to which the final output is the total number of CPU cycles used for all memory accesses.
