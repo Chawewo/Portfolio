@@ -7,7 +7,7 @@ const Background = () => {
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
+  
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {

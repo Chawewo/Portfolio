@@ -18,7 +18,7 @@ const Vitamatch = ({ title, description, imageUrl, githubLink }) => {
      <button >Vitamatch</button>
     </a>
       <p>
-        This project is a web program simulating a simplified CPU cache hierarchy (L1, L2, and L3) and calculates the total number of CPU cycles required for accessing a series of memory addresses. The cache hierarchy follows a Least Recently Used (LRU) replacement policy which means items are organized in order of use, allowing us to identify which item has been used the most/least. The simulator accounts for cache misses and hits at each level before resorting to main memory to which the final output is the total number of CPU cycles used for all memory accesses.
+      Vitamatch is a project I'm incredibly proud to be part of. Our team, consisting of five talented individuals, came together to create a web application that harnesses the power of MySQL, JavaScript, React, Node.js, and Express.js. With Vitamatch, users can input their health and dietary details to receive personalized vitamin supplement recommendations. Vitamatch simplifies the complex process of choosing the right supplements, making it easier for individuals to make informed decisions about their health.
       </p>
     </div>
       <div className="vitamatch-image" style={parallaxStyle} />

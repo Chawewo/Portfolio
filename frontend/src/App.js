@@ -19,8 +19,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Header />} />
       </Routes>
-      <Project />
       <Vitamatch />
+      <Project />
       <Footer />
       
 

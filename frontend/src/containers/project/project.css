@@ -10,37 +10,43 @@
 }
 
 .project-image {
-  background-position: 30% center;
+  background-position-x: -36vw;
   flex: 1;
   border-radius: 0px 40px 40px 0px;
-  height: 60vw; /* Adjust the image height as needed */
+  height: 40vw; /* Adjust the image height as needed */
   background-attachment: fixed;
 }
 
 .project-details {
   flex: 1;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 
 }
 
 .project-details a {
-  font-size: 24px;
+  font-size: 1.5vw;
   font-family: 'Inter';
-   
+  
+  -webkit-text-stroke: .05px;
 }
 
 .project-details p {
-  margin-top: 10px;
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  margin-bottom: 5vw;
 }
 
 .project-details button {
+  margin-top: 50px;
   background-color: #2a2929;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  translate: 19vw;
+  scale: 175%;
 }
 
 .project-details button:hover {
@@ -48,28 +54,67 @@
 }
 @media (max-width: 1920px) {
   .project-image {
-    background-position: 260% center;
+    background-position-x: -42vw;
+    height: 40vw;
+  }
+  .project-details button {
+    translate: 18vw;
   }
 }
 
+@media (max-width: 1550px) {
+  .project-image {
+    background-position-x: -25vw;
+    height: 40vw;
+  }
+  .project-details button {
+    translate: 18vw;
+  }
+}
 @media (max-width: 1280px){
   
 .project-image {
-  background-position: 60% center;
+  background-position-x: -40vw;
+  background-position-y: 0vw;
   height: 50vw;
 }
 }
-@media (max-width: 769px) {
+@media (max-width: 960px) {
 .project-image {
-    background-position: 63% center;
+    background-position-x: -90vw;
     height: 60vw;
-    background-size: 50%;
+  }
+.project-details a {
+    -webkit-text-stroke: .02px;
+  }
+  .project-details button {
+    translate: 18vw;
+  }
+  .project-details p {
+    font-size: 2vw;
+    -webkit-text-stroke: .3px;
+    margin-top: 6vw;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 840px) {
+  .project-image{
+    background-position-x: -120vw;
+  }
+}
+@media (max-width: 620px) {
   .project-image {
-    background-position: 55% center;
-    background-size: 30%;
-    height: 50vw;
+    background-position-x: -170vw;
+    height: 70vw;
+  }
+  .project-details button {
+    translate: 13vw;
+    scale: 150%;
+
+  }
+  .project-details p {
+    margin-top: 6vw;
+    font-size: 2vw;
+    margin-bottom: 5vw;
+    -webkit-text-stroke: .2px;
   }
 }
