@@ -11,7 +11,7 @@ import "./App.css";
 const App = () => {
   return (
     <BrowserRouter>
-    <Background/>
+     <Background/>
     <Navbar />
     <Routes>
         <Route exact path="/" element={<Header />} />
