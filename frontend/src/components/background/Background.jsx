@@ -3,7 +3,7 @@ import background from '../../assets/background.jpg';
 import './background.css';
 
 const Background = () => {
-  const [windowDimensions, setWindowDimensions] = useState({
+  const [setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
